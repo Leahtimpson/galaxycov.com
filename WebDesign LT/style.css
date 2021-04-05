@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+html,body{
+    height: 100%;
+    background-image: url(images/repeating-background.png);
+    background-repeat: repeat repeat;
+}
+.banner {
+    position: relative;
+    background: url(/images/Banner%20background.jpg);
+    height: 75%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    white-space: nowrap;
+    /*border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;*/
+    clip-path: polygon(0 0, 100% 0%, 100% calc (100% - 120px), 50% calc(100% - 10px), 0 calc(100% -120px));
+}
+.banner:before {
+    content: '\00a0';
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle
+}
+.banner:after {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.banner > hgroup{
+    position: relative;
+    display: inline-block;
+    max-width: 720px;
+    margin: 0 auto;
+    vertical-align: middle;
+    white-space: normal;
+    z-index: 100;
+}
+.banner > hgroup > h1 {
+    color: #fff;
+    font: 900 48px/60px arial;
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 3px rgba(0,0,.25)
+}
+.banner > hgroup > h2 {
+    color: #fff;
+    font: 90 30px/40px arial;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px rgba(0,0,.25)
+}
+.banner > hgroup > a {
+    display: inline-block;
+    background-color: midnightblue;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: #fff;
+    font: 500 24px/36px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.banner > hgroup > a:hover{
+    background-color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ul.product-list {
+    list-style-type: none;
+    margin: 0px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+ul.product-list > li{
+/*    margin: 30px;*/
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+/*    height: 300px;*/
+    width: 50%; 
+}
+ul.product-list > li > img {
+    width: auto;
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+	position: relative;
+    left: 35px;
+    bottom: 35px;
+    border: solid;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px
+}
+ul.product-list > li > div{
+/*   margin: 10px;*/
+    padding: 24px;
+    background-color: forestgreen;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 24px;
+}
+ul.product-list > li > div> hgroup {
+	
+}
+ul.product-list > li > div > hgroup > h3{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+ul.product-list > li > div > hgroup > h4{
+    font-family: 'Lobster', cursive;
+}
+ul.product-list > li > div > hgroup> button{
+   border-radius: 40%;
+    padding: 2px 3px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;   
+}
+ul.product-list > li > div > hgroup> a{
+	display: inline-block;
+    background-color: white;
+    border-radius: 24px;
+	padding: 5px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 3px #999;
+    
+}
+ul.product-list > li > div > hgroup> a:hover{
+	background-color: deepskyblue;
+}
+ul> li:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media all and (max-width: 825px){
+    ul.product-list > li {
+        width: 100%;
+    }
+}
+@media all and (max-width: 450px){
+    ul.product-list > li > img {
+        left: 0;
+        bottom: 0;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+.first {
+    height: auto;
+}
+.second > h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.second > p {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    line-height: 2;
+    font-size: 20px;
+}
+.second > form {
+    text-align: center;
+    font-size: 40px;
+}
+.second > form > a:hover {
+    background-color: forestgreen;
+    cursor: pointer;
+}
+.second > form > a {
+    
+}
+
+@media all and (min-width: 1000px) {
+    .first {
+		height: auto!important;
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+    .second {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+.product-details {    
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 100%;
+}
+.first > h1 {
+    text-align: center;
+    color: forestgreen;
+    font: 900 48px/60px arial;
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: uppercase;  
+}
+
+
+
+
+
+
+
+.photogallery {
+    height: 50%;
+}
+.photogallery > .primary-photo {
+    height: 50vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.photogallery > img {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 24px;
+}
+
+
+
+
+
+
+
+
+.product-sizes {
+    font-family: 'Sansita Swashed', cursive;
+}
+.snipcart-add-item {
+    display: inline-block;
+    background-color: maroon;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: #fff;
+    font: 500 24px/36px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
